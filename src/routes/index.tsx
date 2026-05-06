@@ -314,7 +314,7 @@ function Message({ msg }: { msg: Msg }) {
         {isUser ? (
           <p className="whitespace-pre-wrap">{msg.content}</p>
         ) : (
-          <div className="prose prose-sm max-w-none prose-headings:font-semibold prose-headings:mt-3 prose-headings:mb-2 prose-p:my-2 prose-ul:my-2 prose-ol:my-2 prose-li:my-0.5 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:bg-muted prose-code:text-foreground prose-code:before:content-none prose-code:after:content-none prose-pre:bg-muted prose-pre:text-foreground">
+          <div className="markdown">
             {msg.content ? (
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {msg.content}
