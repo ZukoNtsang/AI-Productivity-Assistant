@@ -34,24 +34,6 @@ Aura is a modern, friendly, and highly reliable AI assistant designed to make wo
 ---
 
 
----
-
-## 📁 Project Structure
-
-```
-src/
-├── routes/
-│   ├── __root.tsx          # Root layout (head, html shell)
-│   ├── index.tsx           # Aura chat UI
-│   └── api/
-│       └── chat.ts         # Streaming chat endpoint (calls AI gateway)
-├── components/ui/          # shadcn/ui components
-├── integrations/supabase/  # Auto-generated Supabase client
-└── styles.css              # Design tokens, gradients, markdown styles
-```
-
----
-
 ## 🎨 Customizing Aura
 
 - **Persona / tone** — edit the `SYSTEM_PROMPT` in `src/routes/api/chat.ts`.
